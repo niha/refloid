@@ -1,2 +1,5 @@
 vim から android developers のクラスリファレンスをひきます
 
+nnoremap <C-j> :RefroidCursro<CR>
+
+とかでカーソル下のクラスのリファレンスを開きます
