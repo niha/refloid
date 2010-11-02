@@ -1,5 +1,16 @@
-vim から android developers のクラスリファレンスをひきます
+vim から android developers のクラスリファレンスをひきます。
 
 nnoremap <C-j> :RefroidCursro<CR>
 
-とかでカーソル下のクラスのリファレンスを開きます
+とかでカーソル下のクラスのリファレンスを開きます。
+
+let g:refroid_apilevel = 1
+
+で API レベルの指定ができます。指定したレベルで利用できない API は開くことが出来なくなります。
+デフォルトは 8 です。
+
+let g:refroid_browser = "chromium-browser"
+
+で利用するブラウザの指定ができます。
+デフォルトは "firefox --new-tab" です。
+"screen -X screen w3m" を大変おすすめしません。
