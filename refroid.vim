@@ -28,4 +28,6 @@ fun! s:refroid_cursor()
   call s:refroid(expand("<cword>"))
 endf
 
+command! -nargs=1 Refroid call s:refroid_cursor(<args>)
 command! -nargs=0 RefroidCursor call s:refroid_cursor()
+
